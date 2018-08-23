@@ -1,5 +1,5 @@
 {
-  "name": "@xhubioTable/model",
+  "name": "@xhubiotable/model",
   "version": "0.0.0-semantic-release",
   "keywords": [
     "decision-table"
@@ -7,12 +7,12 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xhubioTable/model.git"
+    "url": "https://github.com/xhubiotable/model.git"
   },
   "bugs": {
-    "url": "https://github.com/xhubioTable/model/issues"
+    "url": "https://github.com/xhubiotable/model/issues"
   },
-  "homepage": "https://github.com/xhubioTable/model#readme",
+  "homepage": "https://github.com/xhubiotable/model#readme",
   "scripts": {
     "build": "npm run src_format && npm run src_lint && babel src -d lib",
     "src_lint": "eslint src tests",
