@@ -1,6 +1,9 @@
 {
   "name": "@xhubiotable/model",
   "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "decision-table"
   ],
