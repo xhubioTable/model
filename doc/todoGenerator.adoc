@@ -1,0 +1,22 @@
+== TodoGenerator
+Each todo is a call to the generator.
+
+=== Properties
+
+generatorName::
+	The name of the generator to call. This is the name the generator was registered in the
+	generator registry
+
+config::
+  The parameters for calling the generator
+
+tableType::
+  The table type of the table this todo comes from
+
+instanceIdSuffix::
+  A suffix for the current instance id
+
+order::
+ The order number. Before the generator todos are executed they are sorted by this
+ number. So the user can define an execution order for the generators. The default
+ order number is '1000'.

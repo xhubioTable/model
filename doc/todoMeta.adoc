@@ -1,0 +1,19 @@
+== TodoMeta
+The meta data of a test case. These data depends on the kind of table.
+
+=== Properties
+
+fieldName::
+	The name of the field in the table
+
+tableName::
+  The table this todo comes from
+
+tableType::
+  The table type of the table this todo comes from
+
+testcaseName::
+  The name of the test case this todo comes from
+
+meta::
+ The meta data itself. Depends from which table the data comes from

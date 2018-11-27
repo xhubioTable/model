@@ -1,0 +1,9 @@
+== TodoStatic
+All the values from the generator column which are NOT a special cmd (like 'gen' for generator)
+are taken as static values. These data will be directly written to the result data.
+
+
+=== Properties
+
+value::
+	The static data
