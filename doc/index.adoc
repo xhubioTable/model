@@ -1,24 +1,7 @@
-== Logger
+== Model
 
-This is a logger facade. It stores all the log entries in Memory.
-This is very useful for testing but not for production.
+This Package is the base for the table models and test cases
 
-It has the following methods:
+include::TableInterface.adoc[leveloffset=+1]
 
-[source, js]
-----
-// Logs debug messages
-debug(arg)
-
-// Logs info messages
-info(arg)
-
-// Logs warning messages
-warning(arg)
-
-// Logs error messages
-error(arg)
-
-// Logs fatal messages
-fatal(arg)
-----
+include::Todos.adoc[leveloffset=+1]

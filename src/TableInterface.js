@@ -39,6 +39,7 @@ export default class TableInterface {
    * Parses a testcase name. If the name is a range it will return an
    * Array of names. For example the name 'tc12-14' will be expanded to:
    * tc12, tc13, tc14
+   * This is a helper method
    * @param testcaseName {string} The reference test case name
    * @return tcNames {array} An array of test case names
    */

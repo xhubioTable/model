@@ -1,0 +1,43 @@
+== TableInterface
+The TableInterface describes the basic Interface for the table.
+This is common for all the tables like decision tables or the matrix tables.
+
+
+=== Properties
+
+tableType::
+	Returns the type of the table
+
+=== Functions
+
+
+[source, js]
+----
+/**
+ * Returns the testcase for the given name. If not found it will throw an exception
+ * @param testcaseName {string} The name of the testcase
+ * @return testcaseDefinition {object} returns the testcase definition object
+ */
+getTestcaseForName(testcaseName) {}
+----
+
+[source, js]
+----
+/**
+ * This generator returns all the testcases which should be executed
+ */
+*getTestcasesForExecution() {}
+----
+
+[source, js]
+----
+/**
+ * Parses a testcase name. If the name is a range it will return an
+ * Array of names. For example the name 'tc12-14' will be expanded to:
+ * tc12, tc13, tc14
+ * This is a helper method
+ * @param testcaseName {string} The reference test case name
+ * @return tcNames {array} An array of test case names
+ */
+processRanges(testcaseName) {}
+----
