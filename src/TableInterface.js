@@ -3,8 +3,7 @@
  */
 export default class TableInterface {
   constructor(opts = {}) {
-    // The name of this testcase. With this name the
-    // testcase could be found in the table
+    // The name of this table
     this.name = opts.name
   }
 
