@@ -9,16 +9,30 @@ export default class TodoMeta {
     // The fieldName
     this.fieldName = opts.fieldName
 
-    // The table this todo comes from
-    this.tableName = opts.tableName
-
-    // The table this todo comes from
-    this.tableType = opts.tableType
-
     // The testcaseName this todo comes from
     this.testcaseName = opts.testcaseName
 
     // depends from which table the data comes from
     this.meta = opts.meta || {}
+
+    this.table = opts.table || {}
+  }
+
+  get metaInformation() {
+    return {
+      tableName: this.tableName,
+      tableType: this.tableType,
+      testcaseName: this.testcaseName,
+      ...this.table.meta,
+      ...this.meta,
+    }
+  }
+
+  get tableName() {
+    return this.table.name
+  }
+
+  get tableType() {
+    return this.table.tableType
   }
 }
