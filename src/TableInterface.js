@@ -5,6 +5,10 @@ export default class TableInterface {
   constructor(opts = {}) {
     // The name of this table
     this.name = opts.name
+
+    // any meta information the table may have.
+    // For example the original file name.
+    this.meta = {}
   }
 
   /**
