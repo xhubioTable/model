@@ -1,4 +1,4 @@
-import { TodoStatic } from '../lib'
+import { TodoStatic } from '../lib/index'
 
 test('Instantiate', done => {
   const todoStatic = new TodoStatic()

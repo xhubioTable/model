@@ -1,4 +1,4 @@
-import { TodoGenerator } from '../lib'
+import { TodoGenerator } from '../lib/index'
 
 test('Instantiate', done => {
   const todoGenerator = new TodoGenerator()

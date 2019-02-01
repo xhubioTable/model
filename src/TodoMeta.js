@@ -15,7 +15,9 @@ export default class TodoMeta {
     // depends from which table the data comes from
     this.meta = opts.meta || {}
 
-    this.table = opts.table || {}
+    this.tableName = opts.tableName
+    this.tableType = opts.tableType
+    this.testcaseMeta = opts.testcaseMeta
   }
 
   get metaInformation() {
@@ -23,16 +25,8 @@ export default class TodoMeta {
       tableName: this.tableName,
       tableType: this.tableType,
       testcaseName: this.testcaseName,
-      ...this.table.meta,
-      ...this.meta,
+      testcaseMeta: this.testcaseMeta,
+      meta: this.meta,
     }
-  }
-
-  get tableName() {
-    return this.table.name
-  }
-
-  get tableType() {
-    return this.table.tableType
   }
 }

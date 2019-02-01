@@ -8,7 +8,7 @@ export default class TableInterface {
 
     // any meta information the table may have.
     // For example the original file name.
-    this.meta = opts.meta || {}
+    this.meta = opts.meta !== undefined ? opts.meta : {}
   }
 
   /**

@@ -22,6 +22,32 @@ export default class TestcaseDefinitionInterface {
     this.table = opts.table
   }
 
+  get tableType() {
+    if (this.table !== undefined) {
+      return this.table.tableType
+    }
+  }
+  get tableName() {
+    if (this.table !== undefined) {
+      return this.table.name
+    }
+  }
+  get tableMeta() {
+    if (this.table !== undefined) {
+      return this.table.meta
+    }
+  }
+
+  get metaInformation() {
+    return {
+      tableName: this.tableName,
+      tableType: this.tableType,
+      testcaseName: this.name,
+      tableMeta: this.tableMeta,
+      meta: this.meta,
+    }
+  }
+
   /**
    * Should this test case be executed or is it only for a reference
    */
@@ -34,13 +60,7 @@ export default class TestcaseDefinitionInterface {
    * testcase could be found in the table
    */
   get name() {
-    throw new Error('Implement this')
-  }
-
-  get tableType() {
-    if (this.table) {
-      return this.table.tableType
-    }
+    return ''
   }
 
   /**

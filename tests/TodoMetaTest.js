@@ -1,4 +1,4 @@
-import { TodoMeta, TableInterface } from '../lib/index'
+import { TodoMeta } from '../lib/index'
 
 test('Instantiate', done => {
   const todoMeta = new TodoMeta()
@@ -8,33 +8,30 @@ test('Instantiate', done => {
 
 test('metaInformation empty', done => {
   const todoMeta = new TodoMeta()
-  expect(todoMeta.metaInformation).toEqual({})
+  expect(todoMeta.metaInformation).toEqual({
+    meta: {},
+    tableName: undefined,
+    tableType: undefined,
+    testcaseName: undefined,
+    tableMeta: undefined,
+  })
   done()
 })
 
 test('metaInformation', done => {
-  const table = new TableInterface({
-    name: 'hugo',
-    meta: { tName: 'tableMetaName' },
-  })
-
-  Object.defineProperty(table, 'tableType', {
-    get: () => {
-      return 'dummyType'
-    },
-  })
-
   const todoMeta = new TodoMeta({
-    table,
+    tableName: 'hugo',
+    tableType: 'dummyType',
+    testcaseMeta: { tName: 'tableMetaName' },
     meta: { metaName: 'otherName' },
     testcaseName: 'tcName',
   })
   expect(todoMeta.metaInformation).toEqual({
-    metaName: 'otherName',
-    tName: 'tableMetaName',
+    meta: { metaName: 'otherName' },
     tableName: 'hugo',
     tableType: 'dummyType',
     testcaseName: 'tcName',
+    testcaseMeta: { tName: 'tableMetaName' },
   })
   done()
 })
