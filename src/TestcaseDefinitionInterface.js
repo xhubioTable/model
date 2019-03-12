@@ -20,8 +20,20 @@ export default class TestcaseDefinitionInterface {
 
     // The table this testcase comes from
     this.table = opts.table
-  }
 
+    // This means that a test case should not be executed if a referenced test case has this set to true
+    this._neverExecute = false
+  }
+  /**
+   * Should this test case never be executed
+   */
+  get neverExecute() {
+    return this._neverExecute
+  }
+  set neverExecute(execute) {
+    this._neverExecute = execute
+  }
+  
   get tableType() {
     if (this.table !== undefined) {
       return this.table.tableType
