@@ -33,7 +33,7 @@ export default class TestcaseDefinitionInterface {
   set neverExecute(execute) {
     this._neverExecute = execute
   }
-  
+
   get tableType() {
     if (this.table !== undefined) {
       return this.table.tableType
@@ -73,6 +73,22 @@ export default class TestcaseDefinitionInterface {
    */
   get name() {
     return ''
+  }
+
+  /**
+   * Returns all the tags found in this test case
+   * @return tags {array} An Array with all the found tags
+   */
+  createTags() {
+    return []
+  }
+
+  /**
+   * Returns all the filter found in this test case
+   * @return filter {array} An Array with all the found filter
+   */
+  createFilter() {
+    return []
   }
 
   /**
