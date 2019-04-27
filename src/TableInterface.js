@@ -1,14 +1,20 @@
 /**
- * Defines the interface for a table
+ * Defines the interface for a table. All the table models must Implement
+ * this interface.
  */
 export default class TableInterface {
   constructor(opts = {}) {
-    // The name of this table
+
+    /**
+     * The name of this table
+     */
     this.name = opts.name
 
-    // any meta information the table may have.
-    // For example the original file name.
-    this.meta = opts.meta !== undefined ? opts.meta : {}
+    /**
+     * Any meta information the table may have.
+     * For example the original file name.
+     */
+     this.meta = opts.meta !== undefined ? opts.meta : {}
   }
 
   /**
@@ -30,6 +36,8 @@ export default class TableInterface {
 
   /**
    * This generator returns all the testcases which should be executed
+   * @generator
+   * @yields {testcaseDefinitionInterface}
    */
   *getTestcasesForExecution() {
     if (this.name === '___') {

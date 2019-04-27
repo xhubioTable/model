@@ -5,27 +5,27 @@ import uuidv4 from 'uuid/v4'
  */
 export default class TestcaseDefinitionInterface {
   constructor(opts = {}) {
-    // The id of this testcase
+    /** The id of this testcase */
     this.id = uuidv4()
 
-    // Defines how often this test case should be created
+    /** Defines how often this test case should be created */
     this.multiplicity = opts.multiplicity || 1
 
-    // The data in the cell for this testcase
+    /** The data in the cell for this testcase */
     this.data = opts.data
 
-    // some meta information.
-    // The format depends on the table
+    // Some meta information.  The format depends on the table
     this.meta = opts.meta
 
-    // The table this testcase comes from
+    /** The table this testcase comes from */
     this.table = opts.table
 
     // This means that a test case should not be executed if a referenced test case has this set to true
     this._neverExecute = false
   }
   /**
-   * Should this test case never be executed
+   * Should this test case never be executed. This means if this test case
+   * is referenced from an other test case it will not be executed
    */
   get neverExecute() {
     return this._neverExecute
@@ -34,16 +34,28 @@ export default class TestcaseDefinitionInterface {
     this._neverExecute = execute
   }
 
+  /**
+   * The table type of the table object
+   */
   get tableType() {
     if (this.table !== undefined) {
       return this.table.tableType
     }
   }
-  get tableName() {
+
+
+  /**
+   * The name of the table stored in the table object
+   */
+   get tableName() {
     if (this.table !== undefined) {
       return this.table.name
     }
   }
+
+  /**
+   * The meta information of the stored table object
+   */
   get tableMeta() {
     if (this.table !== undefined) {
       return this.table.meta
