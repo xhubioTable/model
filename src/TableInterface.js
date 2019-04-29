@@ -4,7 +4,6 @@
  */
 export default class TableInterface {
   constructor(opts = {}) {
-
     /**
      * The name of this table
      */
@@ -14,7 +13,7 @@ export default class TableInterface {
      * Any meta information the table may have.
      * For example the original file name.
      */
-     this.meta = opts.meta !== undefined ? opts.meta : {}
+    this.meta = opts.meta !== undefined ? opts.meta : {}
   }
 
   /**

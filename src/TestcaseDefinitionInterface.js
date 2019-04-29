@@ -43,11 +43,10 @@ export default class TestcaseDefinitionInterface {
     }
   }
 
-
   /**
    * The name of the table stored in the table object
    */
-   get tableName() {
+  get tableName() {
     if (this.table !== undefined) {
       return this.table.name
     }
