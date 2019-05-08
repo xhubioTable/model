@@ -103,6 +103,14 @@ export default class TestcaseDefinitionInterface {
   }
 
   /**
+   * Returns a list of generator names which should not be executed
+   * @return generatorNames {array} An Array with alle the generator names to be switched off for this test case
+   */
+  createGeneratorSwitches() {
+    return []
+  }
+
+  /**
    * Create all the todos for this testcase definition
    * const todos = {
    *   generators :[genTodo,],
