@@ -4,13 +4,13 @@ For each reference a TodoReference is created.
 === Properties
 
 targetTableName::
-	The table name of the target table
+	The table name of the target table.
 
 targetFieldName::
-  The name of the field in the target table
+  The name of the field in the target table.
 
 targetTestcaseName::
-  The name of the test case in the target table
+  The name of the test case in the target table.
 
 instanceIdSuffix::
-  A suffix for the current instance id
+  A suffix for the current instanceId.
