@@ -1,6 +1,6 @@
-import { TodoGenerator } from '../lib/index'
+import { TodoGenerator } from '../src/index'
 
-test('Instantiate', done => {
+test('Instantiate', (done) => {
   const todoGenerator = new TodoGenerator()
   expect(todoGenerator).toBeDefined()
   done()
