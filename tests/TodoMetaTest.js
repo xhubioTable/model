@@ -1,12 +1,12 @@
-import { TodoMeta } from '../lib/index'
+import { TodoMeta } from '../src/index'
 
-test('Instantiate', done => {
+test('Instantiate', (done) => {
   const todoMeta = new TodoMeta()
   expect(todoMeta).toBeDefined()
   done()
 })
 
-test('metaInformation empty', done => {
+test('metaInformation empty', (done) => {
   const todoMeta = new TodoMeta()
   expect(todoMeta.metaInformation).toEqual({
     meta: {},
@@ -18,7 +18,7 @@ test('metaInformation empty', done => {
   done()
 })
 
-test('metaInformation', done => {
+test('metaInformation', (done) => {
   const todoMeta = new TodoMeta({
     tableName: 'hugo',
     tableType: 'dummyType',

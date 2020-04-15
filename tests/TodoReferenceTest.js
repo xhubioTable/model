@@ -1,6 +1,6 @@
-import { TodoReference } from '../lib/index'
+import { TodoReference } from '../src/index'
 
-test('Instantiate', done => {
+test('Instantiate', (done) => {
   const todoReference = new TodoReference()
   expect(todoReference).toBeDefined()
   done()

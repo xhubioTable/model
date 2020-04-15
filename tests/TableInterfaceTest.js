@@ -1,6 +1,6 @@
-import { TableInterface } from '../lib/index'
+import { TableInterface } from '../src/index'
 
-test('Instantiate', done => {
+test('Instantiate', (done) => {
   const tableInterface = new TableInterface()
   expect(tableInterface).toBeDefined()
   done()

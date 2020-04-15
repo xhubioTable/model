@@ -1,12 +1,12 @@
-import { TestcaseDefinitionInterface, TableInterface } from '../lib/index'
+import { TestcaseDefinitionInterface, TableInterface } from '../src/index'
 
-test('Instantiate', done => {
+test('Instantiate', (done) => {
   const testcaseDefinitionInterface = new TestcaseDefinitionInterface()
   expect(testcaseDefinitionInterface).toBeDefined()
   done()
 })
 
-test('meta', done => {
+test('meta', (done) => {
   const table = new TableInterface({
     name: 'hugo',
     meta: { tName: 'tableMetaName' },
