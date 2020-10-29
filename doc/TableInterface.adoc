@@ -1,6 +1,6 @@
 == TableInterface
 The TableInterface describes the basic Interface for the table.
-This is common for all the tables like decision tables or the matrix tables.
+This is common for all the tables, such as decision tables or the matrix tables.
 
 
 === Properties
