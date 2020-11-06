@@ -71,7 +71,7 @@
   },
   "template": {
     "usedBy": [
-      "xhubioTable/data-generator"
+      "xhubioTable/model-decision"
     ]
   }
 }
