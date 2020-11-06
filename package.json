@@ -71,7 +71,7 @@
   },
   "template": {
     "usedBy": [
-      "xhubioTable/processor"
+      "xhubioTable/logger"
     ]
   }
 }
