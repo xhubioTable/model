@@ -12,3 +12,4 @@ src
 .travis.yml
 .npmignore
 tests
+.github
