@@ -1,7 +1,7 @@
 name: CI
 'on': push
 jobs:
-  test:
+  test_and_release:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -28,16 +28,6 @@ jobs:
           node-version: '${{ matrix.node-version }}'
       - run: npm install
       - run: npm test
-  release:
-    needs:
-      - test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 14.15.0
-      - run: npm install
       - run: npx semantic-release
         env:
           CI: 'true'
