@@ -1,4 +1,4 @@
-@xhubiotable/model / [Exports](docApi/modules.md)
+@xhubiotable/model / [Exports](modules.md)
 
 # Model
 
