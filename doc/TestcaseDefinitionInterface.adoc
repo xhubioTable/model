@@ -1,0 +1,73 @@
+== Testcase Definition Interface Documentation
+
+The `TestcaseDefinitionInterface` represents the definition of a test case, including its metadata, execution parameters, and functions to generate related data such as tags, filters, and todos. This interface encapsulates the information and behavior required to create and manage test case data within a table context.
+
+=== Properties
+
+* **logger**  
+  Logger instance used for logging information related to the test case.
+
+* **id**  
+  Unique identifier for this test case.
+
+* **testcaseMeta**  
+  Read-only meta-information for this test case. Contains details inherited from the table (e.g., test case name).
+
+* **multiplicity**  
+  Specifies how many times this test case should be generated. Must be an integer greater than 0.
+
+* **execute**  
+  Indicates whether this test case should be executed. If false, the test case serves only as a reference.
+
+* **neverExecute**  
+  When true, indicates that this test case should not be executed if a referenced test case has this flag set.
+
+* **data**  
+  Data associated with this test case.  
+  In a decision table, a test case represents a column where all data in that column is identified by a unique row value. In a matrix table, this property typically holds a single value.
+
+* **table**  
+  Back reference to the table that contains this test case.
+
+=== Methods
+
+==== createTags
+
+[source, typescript]
+----
+createTags(): string[]
+----
+Generates and returns all tags associated with this test case.  
+*Returns:* An array of strings derived from the test case data.
+
+==== createFilter
+
+[source, typescript]
+----
+createFilter(): FilterInterface[]
+----
+Generates and returns all filters associated with this test case.  
+*Returns:* An array of `FilterInterface` objects representing the filters.
+
+==== createGeneratorSwitches
+
+[source, typescript]
+----
+createGeneratorSwitches(): string[]
+----
+Returns a list of generator names that should be skipped during test execution.  
+*Returns:* An array of generator names as strings.
+
+==== createTodos
+
+[source, typescript]
+----
+createTodos(): TestcaseTodosInterface
+----
+Creates and returns all todo items associated with this test case definition.  
+Todo items are used to schedule additional processing or data generation tasks.  
+*Returns:* An object conforming to `TestcaseTodosInterface`.
+
+=== Summary
+
+The `TestcaseDefinitionInterface` is essential for defining and managing the execution of test cases within a table. It not only holds fundamental properties such as identification and metadata, but also provides methods to generate supplementary data including tags, filters, generator switches, and todo items.

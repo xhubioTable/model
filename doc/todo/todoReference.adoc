@@ -1,0 +1,69 @@
+== TodoReference Documentation
+
+The `TodoReference` component represents a todo item for a reference. A reference todo points to a test case in a different table and includes details such as the target table, target field, target test case, and an instance ID suffix to distinguish multiple references.
+
+== Interfaces
+
+=== TodoReferenceInterface
+
+Defines the structure for a reference todo item. This interface extends the base todo interface and includes the following properties:
+
+* **targetTableName**  
+  The name of the target table to which this reference points.
+
+* **targetFieldName**  
+  The name of the target field in the referenced table.
+
+* **targetTestcaseName**  
+  The name of the target test case in the referenced table.
+
+* **instanceIdSuffix**  
+  The instance ID suffix used to uniquely identify this reference.
+
+=== TodoReferenceOptions
+
+Specifies the options required to create a `TodoReference` instance. In addition to the base todo options, it includes:
+
+* **targetTableName**  
+  The name of the target table to which this reference points.
+
+* **targetFieldName**  
+  The name of the target field in the referenced table.
+
+* **targetTestcaseName**  
+  The name of the target test case in the referenced table.
+
+* **instanceIdSuffix**  
+  The instance ID suffix used to uniquely identify this reference.
+
+== Class: TodoReference
+
+The `TodoReference` class implements the reference todo item. It extends the base todo functionality provided by `TodoBase` and implements the `TodoReferenceInterface`. This class encapsulates the properties needed to reference a test case from a different table.
+
+[source, typescript]
+----
+export class TodoReference extends TodoBase implements TodoReferenceInterface {
+  targetTableName: string
+  targetFieldName: string
+  targetTestcaseName: string
+  instanceIdSuffix: string
+
+  /**
+   * Constructs a new TodoReference instance.
+   *
+   * @param opts - Initialization options for the TodoReference, including base properties
+   *               and specific reference details.
+   */
+  constructor(opts: TodoReferenceOptions) {
+    super(opts)
+    this.targetTableName = opts.targetTableName
+    this.targetFieldName = opts.targetFieldName
+    this.targetTestcaseName = opts.targetTestcaseName
+    this.instanceIdSuffix = opts.instanceIdSuffix
+  }
+}
+----
+
+== Summary
+
+The `TodoReference` component is essential for managing references between test cases across different tables. It enables a test case to refer to data in another table by specifying the target table, field, test case, and an instance ID suffix for disambiguation.

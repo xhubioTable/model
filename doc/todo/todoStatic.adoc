@@ -1,0 +1,46 @@
+== TodoStatic Documentation
+The `TodoStatic` component represents a todo item for handling static values during test case generation. A static todo defines a constant value specified in the generator column. This value is used as-is without modification, providing a straightforward way to assign static data to a test case.
+
+
+=== TodoStaticInterface
+
+This interface extends the base todo interface and specifies the structure for a static todo item. It includes the following property:
+
+* **value**  
+  The static value assigned to this todo.
+
+=== TodoStaticOptions
+
+This interface defines the options required to create a `TodoStatic` instance. It extends the base todo options and includes:
+
+* **value**  
+  The static value that this todo will hold.
+
+=== Class: TodoStatic
+
+The `TodoStatic` class implements the `TodoStaticInterface` and extends the base functionality provided by `TodoBase`. It encapsulates the static value used during test case generation.
+
+[source, typescript]
+----
+export class TodoStatic extends TodoBase implements TodoStaticInterface {
+  /**
+   * The static value for this todo.
+   */
+  value: string
+
+  /**
+   * Constructs a new TodoStatic instance.
+   *
+   * @param opts - Initialization options for the TodoStatic, including base properties
+   *               and the specific static value.
+   */
+  constructor(opts: TodoStaticOptions) {
+    super(opts)
+    this.value = opts.value
+  }
+}
+----
+
+=== Summary
+
+The `TodoStatic` component is essential for representing constant, unchanging data in the test case generation process. By providing a clear structure for static values through its interface and class implementation, it ensures that static data is managed consistently across test cases.

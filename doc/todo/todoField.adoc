@@ -1,0 +1,53 @@
+== TodoField Documentation
+
+The `TodoField` represents a todo item for handling static field values. It corresponds to a value specified in the generator column and is typically used for multi-row fields in test case data. This documentation covers the interfaces and class that define and implement this functionality.
+
+=== TodoFieldInterface
+
+Defines the structure for a todo item related to static field values. It extends the base todo interface and includes the following properties:
+* **key**: The value provided in the "key" column.
+* **comment**: The comment or annotation provided in the "comment" column.
+* **other**: Additional information provided in the "other" column.
+
+=== TodoFieldOptions
+
+Specifies the options used to create a `TodoField` instance. In addition to the base properties inherited from the todo base options, it includes:
+* **key**: The static value from the "key" column.
+* **comment**: The comment or annotation from the "comment" column.
+* **other**: Additional information from the "other" column.
+
+=== Class: TodoField
+
+The `TodoField` class is an implementation of the static field todo item. It extends the base todo functionality (provided by `TodoBase`) and implements the `TodoFieldInterface`. The class encapsulates the properties needed to handle static data values, including:
+* **key**: The static value.
+* **comment**: The comment or annotation.
+* **other**: Additional information.
+
+The constructor initializes these properties using the provided options.
+
+=== Example Usage
+
+[source, typescript]
+----
+import { TodoField } from './TodoField'
+
+const options = {
+  fieldName: 'exampleField',
+  testcaseMeta: {
+    fileName: 'test.xlsx',
+    tableName: 'Test Table',
+    tableType: 'decision-table',
+    testcaseName: 'TestCase1'
+  },
+  key: 'staticKey',
+  comment: 'This is a comment for the static field',
+  other: 'Additional info'
+}
+
+const todoField = new TodoField(options)
+console.log(todoField)
+----
+
+=== Summary
+
+The `TodoField` component is essential for representing static data values in test case generation. It provides a structured way to capture and process static values along with their associated comments and additional details. This helps ensure that static field data is managed consistently across test cases.

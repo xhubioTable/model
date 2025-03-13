@@ -4,4 +4,6 @@ This Package is the base for the table models and test cases
 
 include::TableInterface.adoc[leveloffset=+1]
 
+include::TestcaseDefinitionInterface.adoc[leveloffset=+1]
+
 include::Todos.adoc[leveloffset=+1]

@@ -1,0 +1,69 @@
+== TodoGenerator Documentation
+
+The `TodoGenerator` component represents a todo item for invoking a generator. During table processing, all generator calls are collected into a list of todo items. These todos are then executed repeatedly until each generator has produced its data. This mechanism ensures that dynamic data generation is coordinated across the processing of a table.
+
+== Interfaces
+
+=== TodoGeneratorInterface
+
+Defines the structure for a generator todo item. This interface extends the base todo interface and includes properties specific to generator invocation.
+
+* **generatorName**  
+  The name of the generator to be invoked.
+
+* **config**  
+  The configuration or parameters for this generator call.
+
+* **instanceIdSuffix**  
+  The suffix for the instanceId, used to distinguish multiple calls.
+
+* **order**  
+  Determines the execution order of generator todos. Lower numbers are executed before higher numbers.
+
+=== TodoGeneratorOptions
+
+Specifies the options required to create a `TodoGenerator` instance. It extends the base todo options and includes additional properties necessary for invoking a generator.
+
+* **generatorName**  
+  The name of the generator to be invoked.
+
+* **config**  
+  The configuration or parameters for the generator call.
+
+* **instanceIdSuffix**  
+  The suffix for the instanceId to distinguish multiple calls.
+
+* **order**  
+  Determines the execution order of the generator todos. If not provided, it defaults to 1000.
+
+== Class: TodoGenerator
+
+The `TodoGenerator` class implements the `TodoGeneratorInterface` and extends the base functionality provided by `TodoBase`. It encapsulates the properties needed for a generator invocation, such as the generator name, configuration, instance ID suffix, and execution order.
+
+[source, typescript]
+----
+export class TodoGenerator extends TodoBase implements TodoGeneratorInterface {
+  generatorName: string
+  config: string
+  instanceIdSuffix: string
+  order: number
+
+  /**
+   * Constructs a new TodoGenerator instance.
+   *
+   * @param opts - Initialization options for the TodoGenerator, including base properties
+   *               and specific details required for generator invocation.
+   */
+  constructor(opts: TodoGeneratorOptions) {
+    super(opts)
+    this.generatorName = opts.generatorName
+    this.config = opts.config
+    this.instanceIdSuffix = opts.instanceIdSuffix
+    this.order = opts.order || 1000
+  }
+}
+----
+
+== Summary
+
+The `TodoGenerator` is a critical component for scheduling and executing generator calls within the test case data generation process. By defining clear properties and an execution order, it ensures that dynamic data can be generated in a controlled and predictable manner.

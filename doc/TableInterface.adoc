@@ -1,43 +1,63 @@
-== TableInterface
-The TableInterface describes the basic Interface for the table.
-This is common for all the tables, such as decision tables or the matrix tables.
+== Table Interface Documentation
 
+The `TableInterface` defines the abstract representation of a table. It is designed to support various types of tables such as decision tables, matrix tables, etc. This interface provides properties to hold the table’s metadata and methods to retrieve and process test case definitions.
 
 === Properties
 
-tableType::
-	Returns the type of the table
+* **fileName**  
+  The file name from which the table is loaded.
 
-=== Functions
+* **tableName**  
+  The human-readable name of the table.
 
+* **logger**  
+  The logger instance used for logging operations related to the table.
 
-[source, js]
-----
-/**
- * Returns the testcase for the given name. If not found it will throw an exception
- * @param testcaseName {string} The name of the testcase
- * @return testcaseDefinition {object} returns the testcase definition object
- */
-getTestcaseForName(testcaseName) {}
-----
+* **tableMeta**  
+  Read-only meta-information about the table (e.g., origin, descriptive details).
 
-[source, js]
-----
-/**
- * This generator returns all the testcases which should be executed
- */
-*getTestcasesForExecution() {}
-----
+* **tableType**  
+  Read-only string identifier representing the type of the table (e.g., "decision-table", "matrix-table").
 
-[source, js]
+=== Methods
+
+==== getTestcaseForName
+
+[source, typescript]
 ----
-/**
- * Parses a testcase name. If the name is a range it will return an
- * Array of names. For example the name 'tc12-14' will be expanded to:
- * tc12, tc13, tc14
- * This is a helper method
- * @param testcaseName {string} The reference test case name
- * @return tcNames {array} An array of test case names
- */
-processRanges(testcaseName) {}
+getTestcaseForName(testcaseName: string): TestcaseDefinitionInterface
 ----
+Retrieves the test case definition for a given test case name.  
+*Parameters:*  
+- `testcaseName` – The name of the test case to retrieve.  
+*Returns:*  
+- The test case definition corresponding to the provided name.  
+*Throws:*  
+- An error if the test case cannot be found.
+
+==== getTestcasesForExecution
+
+[source, typescript]
+----
+getTestcasesForExecution(): Generator<TestcaseDefinitionInterface, void, unknown>
+----
+A generator function that yields all test case definitions intended for execution.  
+This method allows the caller to iterate over each test case defined in the table.
+
+==== processRanges
+
+[source, typescript]
+----
+processRanges(rangeName: string): string[]
+----
+Parses a test case name or range and returns an array of individual test case names.  
+For example, a range name such as "tc12-14" is expanded to:
+["tc12", "tc13", "tc14"].  
+*Parameters:*  
+- `rangeName` – The test case name or range to parse.  
+*Returns:*  
+- An array of test case names.
+
+=== Summary
+
+The `TableInterface` serves as a foundational contract for table implementations. It encapsulates essential properties, such as metadata and logging, and defines key methods for accessing test case definitions and processing test case ranges. This interface enables consistent handling of various table types across the application.

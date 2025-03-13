@@ -4,10 +4,10 @@ Each Generator cmd or each reference creates a 'todo'.
 There are different types of todos.
 
 
-include::todoStatic.adoc[leveloffset=+1]
+include::todo/todoStatic.adoc[leveloffset=+1]
 
-include::todoMeta.adoc[leveloffset=+1]
+include::todo/todoField.adoc[leveloffset=+1]
 
-include::todoGenerator.adoc[leveloffset=+1]
+include::todo/todoGenerator.adoc[leveloffset=+1]
 
-include::todoReference.adoc[leveloffset=+1]
+include::todo/todoReference.adoc[leveloffset=+1]
