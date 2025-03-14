@@ -1,6 +1,6 @@
 import { TestcaseDefinitionInterface } from './TestcaseDefinitionInterface'
 import { MetaTable } from './MetaInterface'
-import { LoggerInterface } from '@tlink/logger'
+import { LoggerInterface } from '@xhubiotable/logger'
 
 /**
  * Represents the abstract definition of a table.

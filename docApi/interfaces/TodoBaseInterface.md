@@ -1,12 +1,12 @@
-[**@tlink/model**](../README.md)
+[**@xhubiotable/model**](../README.md)
 
 ***
 
-[@tlink/model](../globals.md) / TodoBaseInterface
+[@xhubiotable/model](../globals.md) / TodoBaseInterface
 
 # Interface: TodoBaseInterface
 
-Defined in: todo/TodoBase.ts:10
+Defined in: [todo/TodoBase.ts:10](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L10)
 
 Represents the common data structure for all todo items.
 
@@ -28,7 +28,7 @@ or it will throw an error if any remain incomplete.
 
 > **fieldName**: `string`
 
-Defined in: todo/TodoBase.ts:14
+Defined in: [todo/TodoBase.ts:14](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L14)
 
 The name of the field associated with this todo.
 
@@ -38,6 +38,6 @@ The name of the field associated with this todo.
 
 > **testcaseMeta**: [`MetaTestcase`](MetaTestcase.md)
 
-Defined in: todo/TodoBase.ts:19
+Defined in: [todo/TodoBase.ts:19](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L19)
 
 Meta-information about the test case.

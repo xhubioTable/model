@@ -1,12 +1,12 @@
-[**@tlink/model**](../README.md)
+[**@xhubiotable/model**](../README.md)
 
 ***
 
-[@tlink/model](../globals.md) / TestcaseTodosInterface
+[@xhubiotable/model](../globals.md) / TestcaseTodosInterface
 
 # Interface: TestcaseTodosInterface
 
-Defined in: TestcaseTodosInterface.ts:12
+Defined in: [TestcaseTodosInterface.ts:12](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/TestcaseTodosInterface.ts#L12)
 
 Represents all the todo items associated with a single test case.
 
@@ -19,7 +19,7 @@ to construct the test case and/or generate its associated data.
 
 > **field**: [`TodoFieldInterface`](TodoFieldInterface.md)[]
 
-Defined in: TestcaseTodosInterface.ts:39
+Defined in: [TestcaseTodosInterface.ts:39](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/TestcaseTodosInterface.ts#L39)
 
 An array of field todos.
 
@@ -31,7 +31,7 @@ These todos are responsible for processing individual field values within the te
 
 > **generator**: [`TodoGeneratorInterface`](TodoGeneratorInterface.md)[]
 
-Defined in: TestcaseTodosInterface.ts:18
+Defined in: [TestcaseTodosInterface.ts:18](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/TestcaseTodosInterface.ts#L18)
 
 An array of todos for invoking data generators.
 
@@ -43,7 +43,7 @@ These todos represent generator calls that need to be executed to produce dynami
 
 > **reference**: [`TodoReferenceInterface`](TodoReferenceInterface.md)[]
 
-Defined in: TestcaseTodosInterface.ts:25
+Defined in: [TestcaseTodosInterface.ts:25](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/TestcaseTodosInterface.ts#L25)
 
 An array of reference todos.
 
@@ -55,7 +55,7 @@ These todos manage the resolution of references between test cases or data eleme
 
 > **static**: [`TodoStaticInterface`](TodoStaticInterface.md)[]
 
-Defined in: TestcaseTodosInterface.ts:32
+Defined in: [TestcaseTodosInterface.ts:32](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/TestcaseTodosInterface.ts#L32)
 
 An array of static todos.
 

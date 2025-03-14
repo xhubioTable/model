@@ -1,12 +1,12 @@
-[**@tlink/model**](../README.md)
+[**@xhubiotable/model**](../README.md)
 
 ***
 
-[@tlink/model](../globals.md) / TodoFieldInterface
+[@xhubiotable/model](../globals.md) / TodoFieldInterface
 
 # Interface: TodoFieldInterface
 
-Defined in: todo/TodoField.ts:9
+Defined in: [todo/TodoField.ts:9](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoField.ts#L9)
 
 Represents a todo item for handling static field values.
 
@@ -23,7 +23,7 @@ typically representing the value for a multi-row field in the test case data.
 
 > **comment**: `string`
 
-Defined in: todo/TodoField.ts:18
+Defined in: [todo/TodoField.ts:18](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoField.ts#L18)
 
 The comment or annotation provided in the "comment" column.
 
@@ -33,7 +33,7 @@ The comment or annotation provided in the "comment" column.
 
 > **fieldName**: `string`
 
-Defined in: todo/TodoBase.ts:14
+Defined in: [todo/TodoBase.ts:14](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L14)
 
 The name of the field associated with this todo.
 
@@ -47,7 +47,7 @@ The name of the field associated with this todo.
 
 > **key**: `string`
 
-Defined in: todo/TodoField.ts:13
+Defined in: [todo/TodoField.ts:13](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoField.ts#L13)
 
 The value provided in the "key" column.
 
@@ -57,7 +57,7 @@ The value provided in the "key" column.
 
 > **other**: `string`
 
-Defined in: todo/TodoField.ts:23
+Defined in: [todo/TodoField.ts:23](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoField.ts#L23)
 
 Additional information provided in the "other" column.
 
@@ -67,7 +67,7 @@ Additional information provided in the "other" column.
 
 > **testcaseMeta**: [`MetaTestcase`](MetaTestcase.md)
 
-Defined in: todo/TodoBase.ts:19
+Defined in: [todo/TodoBase.ts:19](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L19)
 
 Meta-information about the test case.
 

@@ -1,3 +1,7 @@
+**@xhubiotable/model**
+
+***
+
 # Model
 
 This Package is the base for the table models and test cases

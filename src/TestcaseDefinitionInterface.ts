@@ -2,7 +2,7 @@ import { TableInterface } from './TableInterface'
 import { FilterInterface } from './FilterInterface'
 import { TestcaseTodosInterface } from './TestcaseTodosInterface'
 import { MetaTestcase } from './MetaInterface'
-import { LoggerInterface } from '@tlink/logger'
+import { LoggerInterface } from '@xhubiotable/logger'
 
 /**
  * Represents the definition of a test case, including its metadata, execution parameters,

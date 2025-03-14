@@ -1,12 +1,12 @@
-[**@tlink/model**](../README.md)
+[**@xhubiotable/model**](../README.md)
 
 ***
 
-[@tlink/model](../globals.md) / TodoStatic
+[@xhubiotable/model](../globals.md) / TodoStatic
 
 # Class: TodoStatic
 
-Defined in: todo/TodoStatic.ts:32
+Defined in: [todo/TodoStatic.ts:32](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoStatic.ts#L32)
 
 Implementation of a todo item for static values.
 
@@ -27,7 +27,7 @@ that represents constant data used during test case generation.
 
 > **new TodoStatic**(`opts`): [`TodoStatic`](TodoStatic.md)
 
-Defined in: todo/TodoStatic.ts:44
+Defined in: [todo/TodoStatic.ts:44](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoStatic.ts#L44)
 
 Constructs a new TodoStatic instance.
 
@@ -54,7 +54,7 @@ Initialization options for the TodoStatic, including base properties
 
 > **fieldName**: `string`
 
-Defined in: todo/TodoBase.ts:37
+Defined in: [todo/TodoBase.ts:37](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L37)
 
 The name of the field associated with this todo.
 
@@ -72,7 +72,7 @@ The name of the field associated with this todo.
 
 > **testcaseMeta**: [`MetaTestcase`](../interfaces/MetaTestcase.md)
 
-Defined in: todo/TodoBase.ts:38
+Defined in: [todo/TodoBase.ts:38](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L38)
 
 Meta-information about the test case.
 
@@ -90,7 +90,7 @@ Meta-information about the test case.
 
 > **value**: `string`
 
-Defined in: todo/TodoStatic.ts:36
+Defined in: [todo/TodoStatic.ts:36](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoStatic.ts#L36)
 
 The static value for this todo.
 

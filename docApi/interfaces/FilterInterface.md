@@ -1,12 +1,12 @@
-[**@tlink/model**](../README.md)
+[**@xhubiotable/model**](../README.md)
 
 ***
 
-[@tlink/model](../globals.md) / FilterInterface
+[@xhubiotable/model](../globals.md) / FilterInterface
 
 # Interface: FilterInterface
 
-Defined in: FilterInterface.ts:8
+Defined in: [FilterInterface.ts:8](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/FilterInterface.ts#L8)
 
 Represents a filter used to select or exclude test cases.
 
@@ -20,7 +20,7 @@ filter processor, a filter expression, and optional comments.
 
 > `optional` **comment**: `string`
 
-Defined in: FilterInterface.ts:26
+Defined in: [FilterInterface.ts:26](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/FilterInterface.ts#L26)
 
 Optional comments providing additional context or description about the filter.
 
@@ -30,7 +30,7 @@ Optional comments providing additional context or description about the filter.
 
 > **expression**: `string`
 
-Defined in: FilterInterface.ts:21
+Defined in: [FilterInterface.ts:21](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/FilterInterface.ts#L21)
 
 The filter expression.
 
@@ -42,7 +42,7 @@ This expression is used to evaluate test cases and determine whether they should
 
 > **filterProcessorName**: `string`
 
-Defined in: FilterInterface.ts:14
+Defined in: [FilterInterface.ts:14](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/FilterInterface.ts#L14)
 
 The name of the filter processor.
 

@@ -1,12 +1,12 @@
-[**@tlink/model**](../README.md)
+[**@xhubiotable/model**](../README.md)
 
 ***
 
-[@tlink/model](../globals.md) / TodoStaticInterface
+[@xhubiotable/model](../globals.md) / TodoStaticInterface
 
 # Interface: TodoStaticInterface
 
-Defined in: todo/TodoStatic.ts:9
+Defined in: [todo/TodoStatic.ts:9](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoStatic.ts#L9)
 
 Represents a todo item for handling static values.
 
@@ -23,7 +23,7 @@ This value is used as-is during the test case generation process.
 
 > **fieldName**: `string`
 
-Defined in: todo/TodoBase.ts:14
+Defined in: [todo/TodoBase.ts:14](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L14)
 
 The name of the field associated with this todo.
 
@@ -37,7 +37,7 @@ The name of the field associated with this todo.
 
 > **testcaseMeta**: [`MetaTestcase`](MetaTestcase.md)
 
-Defined in: todo/TodoBase.ts:19
+Defined in: [todo/TodoBase.ts:19](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L19)
 
 Meta-information about the test case.
 
@@ -51,6 +51,6 @@ Meta-information about the test case.
 
 > **value**: `string`
 
-Defined in: todo/TodoStatic.ts:13
+Defined in: [todo/TodoStatic.ts:13](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoStatic.ts#L13)
 
 The static value assigned to this todo.

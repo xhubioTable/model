@@ -1,12 +1,12 @@
-[**@tlink/model**](../README.md)
+[**@xhubiotable/model**](../README.md)
 
 ***
 
-[@tlink/model](../globals.md) / TodoReferenceInterface
+[@xhubiotable/model](../globals.md) / TodoReferenceInterface
 
 # Interface: TodoReferenceInterface
 
-Defined in: todo/TodoReference.ts:10
+Defined in: [todo/TodoReference.ts:10](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoReference.ts#L10)
 
 Represents a todo item for a reference.
 
@@ -24,7 +24,7 @@ as well as an instance ID suffix to distinguish multiple references.
 
 > **fieldName**: `string`
 
-Defined in: todo/TodoBase.ts:14
+Defined in: [todo/TodoBase.ts:14](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L14)
 
 The name of the field associated with this todo.
 
@@ -38,7 +38,7 @@ The name of the field associated with this todo.
 
 > **instanceIdSuffix**: `string`
 
-Defined in: todo/TodoReference.ts:29
+Defined in: [todo/TodoReference.ts:29](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoReference.ts#L29)
 
 The instance ID suffix used to uniquely identify this reference.
 
@@ -48,7 +48,7 @@ The instance ID suffix used to uniquely identify this reference.
 
 > **targetFieldName**: `string`
 
-Defined in: todo/TodoReference.ts:19
+Defined in: [todo/TodoReference.ts:19](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoReference.ts#L19)
 
 The name of the target field in the referenced table.
 
@@ -58,7 +58,7 @@ The name of the target field in the referenced table.
 
 > **targetTableName**: `string`
 
-Defined in: todo/TodoReference.ts:14
+Defined in: [todo/TodoReference.ts:14](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoReference.ts#L14)
 
 The name of the target table to which this reference points.
 
@@ -68,7 +68,7 @@ The name of the target table to which this reference points.
 
 > **targetTestcaseName**: `string`
 
-Defined in: todo/TodoReference.ts:24
+Defined in: [todo/TodoReference.ts:24](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoReference.ts#L24)
 
 The name of the target test case in the referenced table.
 
@@ -78,7 +78,7 @@ The name of the target test case in the referenced table.
 
 > **testcaseMeta**: [`MetaTestcase`](MetaTestcase.md)
 
-Defined in: todo/TodoBase.ts:19
+Defined in: [todo/TodoBase.ts:19](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L19)
 
 Meta-information about the test case.
 

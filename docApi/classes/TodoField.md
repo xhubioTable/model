@@ -1,12 +1,12 @@
-[**@tlink/model**](../README.md)
+[**@xhubiotable/model**](../README.md)
 
 ***
 
-[@tlink/model](../globals.md) / TodoField
+[@xhubiotable/model](../globals.md) / TodoField
 
 # Class: TodoField
 
-Defined in: todo/TodoField.ts:52
+Defined in: [todo/TodoField.ts:52](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoField.ts#L52)
 
 Implementation of a Todo item for static field values.
 
@@ -27,7 +27,7 @@ properties for the "key", "comment", and "other" columns to handle static data v
 
 > **new TodoField**(`opts`): [`TodoField`](TodoField.md)
 
-Defined in: todo/TodoField.ts:74
+Defined in: [todo/TodoField.ts:74](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoField.ts#L74)
 
 Constructs a new TodoField instance.
 
@@ -54,7 +54,7 @@ Initialization options for the TodoField, including base properties
 
 > **comment**: `string`
 
-Defined in: todo/TodoField.ts:61
+Defined in: [todo/TodoField.ts:61](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoField.ts#L61)
 
 The comment provided in the "comment" column.
 
@@ -68,7 +68,7 @@ The comment provided in the "comment" column.
 
 > **fieldName**: `string`
 
-Defined in: todo/TodoBase.ts:37
+Defined in: [todo/TodoBase.ts:37](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L37)
 
 The name of the field associated with this todo.
 
@@ -86,7 +86,7 @@ The name of the field associated with this todo.
 
 > **key**: `string`
 
-Defined in: todo/TodoField.ts:56
+Defined in: [todo/TodoField.ts:56](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoField.ts#L56)
 
 The value provided in the "key" column.
 
@@ -100,7 +100,7 @@ The value provided in the "key" column.
 
 > **other**: `string`
 
-Defined in: todo/TodoField.ts:66
+Defined in: [todo/TodoField.ts:66](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoField.ts#L66)
 
 Additional information provided in the "other" column.
 
@@ -114,7 +114,7 @@ Additional information provided in the "other" column.
 
 > **testcaseMeta**: [`MetaTestcase`](../interfaces/MetaTestcase.md)
 
-Defined in: todo/TodoBase.ts:38
+Defined in: [todo/TodoBase.ts:38](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L38)
 
 Meta-information about the test case.
 

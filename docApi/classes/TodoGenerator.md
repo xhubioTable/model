@@ -1,12 +1,12 @@
-[**@tlink/model**](../README.md)
+[**@xhubiotable/model**](../README.md)
 
 ***
 
-[@tlink/model](../globals.md) / TodoGenerator
+[@xhubiotable/model](../globals.md) / TodoGenerator
 
 # Class: TodoGenerator
 
-Defined in: todo/TodoGenerator.ts:65
+Defined in: [todo/TodoGenerator.ts:65](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoGenerator.ts#L65)
 
 Implementation of a todo item for calling a generator.
 
@@ -28,7 +28,7 @@ and execution order.
 
 > **new TodoGenerator**(`opts`): [`TodoGenerator`](TodoGenerator.md)
 
-Defined in: todo/TodoGenerator.ts:77
+Defined in: [todo/TodoGenerator.ts:77](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoGenerator.ts#L77)
 
 Constructs a new TodoGenerator instance.
 
@@ -55,7 +55,7 @@ Initialization options for the TodoGenerator, including base properties
 
 > **config**: `string`
 
-Defined in: todo/TodoGenerator.ts:67
+Defined in: [todo/TodoGenerator.ts:67](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoGenerator.ts#L67)
 
 The configuration or parameters for this generator call.
 
@@ -69,7 +69,7 @@ The configuration or parameters for this generator call.
 
 > **fieldName**: `string`
 
-Defined in: todo/TodoBase.ts:37
+Defined in: [todo/TodoBase.ts:37](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L37)
 
 The name of the field associated with this todo.
 
@@ -87,7 +87,7 @@ The name of the field associated with this todo.
 
 > **generatorName**: `string`
 
-Defined in: todo/TodoGenerator.ts:66
+Defined in: [todo/TodoGenerator.ts:66](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoGenerator.ts#L66)
 
 The name of the generator to be invoked.
 
@@ -101,7 +101,7 @@ The name of the generator to be invoked.
 
 > **instanceIdSuffix**: `string`
 
-Defined in: todo/TodoGenerator.ts:68
+Defined in: [todo/TodoGenerator.ts:68](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoGenerator.ts#L68)
 
 The suffix for the instanceId to distinguish multiple calls.
 
@@ -115,7 +115,7 @@ The suffix for the instanceId to distinguish multiple calls.
 
 > **order**: `number`
 
-Defined in: todo/TodoGenerator.ts:69
+Defined in: [todo/TodoGenerator.ts:69](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoGenerator.ts#L69)
 
 Determines the execution order of generator todos.
 Lower numbers are executed before higher numbers.
@@ -130,7 +130,7 @@ Lower numbers are executed before higher numbers.
 
 > **testcaseMeta**: [`MetaTestcase`](../interfaces/MetaTestcase.md)
 
-Defined in: todo/TodoBase.ts:38
+Defined in: [todo/TodoBase.ts:38](https://github.com/xhubioTable/model/blob/3ec038a83f8a676734aeb01841968d004d66a15f/src/todo/TodoBase.ts#L38)
 
 Meta-information about the test case.
 

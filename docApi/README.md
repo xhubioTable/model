@@ -1,4 +1,4 @@
-**@tlink/model**
+**@xhubiotable/model**
 
 ***
 
